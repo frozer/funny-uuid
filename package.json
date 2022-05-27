@@ -13,12 +13,12 @@
     "corpora"
   ],
   "bugs": {
-    "url": "https://github.com/vicentecalfo/star-trek-planet-uuid/issues"
+    "url": "https://github.com/frozer/funny-uuid/issues"
   },
-  "homepage": "https://github.com/vicentecalfo/star-trek-planet-uuid#readme",
+  "homepage": "https://github.com/frozer/funny-uuid##readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vicentecalfo/star-trek-planet-uuid.git"
+    "url": "git+https://github.com/frozer/funny-uuid.git"
   },
   "author": "Denis Morozov <n.halcyon@gmail.com>",
   "dependencies": {
