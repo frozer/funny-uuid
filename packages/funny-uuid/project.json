@@ -1,0 +1,43 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/funny-uuid/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/funny-uuid",
+        "main": "packages/funny-uuid/src/index.ts",
+        "tsConfig": "packages/funny-uuid/tsconfig.lib.json",
+        "assets": [
+          "packages/funny-uuid/*.md"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/funny-uuid/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/packages/funny-uuid"
+      ],
+      "options": {
+        "jestConfig": "packages/funny-uuid/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
